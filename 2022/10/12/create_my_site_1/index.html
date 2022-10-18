@@ -1,10 +1,14 @@
 <!DOCTYPE HTML>
-<html lang="zh-TW">
+<html>
 <head>
   <meta charset="utf-8">
   
   <title>開始製作網站(一) - 下載Hexo + 部署至Github | 榆樹不會開花</title>
+
+  
   <meta name="author" content="YuChing Kao">
+  
+
   
   <meta name="description" content="事前準備要安裝的套件主要有三個:
 
@@ -17,59 +21,72 @@ Node.js 下載安裝進入下載頁面https://nodejs.org/zh-tw/download/，並�
 
 通常會選擇安裝LTS，因為比較穩定。或是選擇其他版本也可以，但">
   
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  
+  
+  <meta name="keywords" content="github,hexo,website">
+  
+
+  <meta id="viewport" name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
 
   <meta property="og:title" content="開始製作網站(一) - 下載Hexo + 部署至Github"/>
+
   <meta property="og:site_name" content="榆樹不會開花"/>
 
   
-    <meta property="og:image" content=""/>
+  <meta property="og:image" content="/favicon.ico"/>
   
 
-  <link rel="shortcut icon" href="/favicon.png">
-  
-  
-<link rel="stylesheet" href="/css/style.css">
-
-  <!--[if lt IE 9]><script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script><![endif]-->
-  
-
+  <link href="/favicon.ico" rel="icon">
+  <link rel="alternate" href="/atom.xml" title="榆樹不會開花" type="application/atom+xml">
+  <link rel="stylesheet" href="/css/style.css" media="screen" type="text/css">
 <meta name="generator" content="Hexo 6.3.0"></head>
 
 
 <body>
-  <header id="header" class="inner"><div class="alignleft">
-  <h1><a href="/">榆樹不會開花</a></h1>
-  <h2><a href="/"></a></h2>
-</div>
-<nav id="main-nav" class="alignright">
-  <ul>
-    
-      <li><a href="/.">Home</a></li>
-    
-      <li><a href="/archives">Archives</a></li>
-    
-  </ul>
-  <div class="clearfix"></div>
-</nav>
-<div class="clearfix"></div>
-</header>
-  <div id="content" class="inner">
-    <div id="main-col" class="alignleft"><div id="wrapper"><article id="post-create_my_site_1" class="h-entry post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  
-  <div class="post-content">
+<div class="blog">
+  <div class="content">
+
     <header>
+  <div class="site-branding">
+    <h1 class="site-title">
+      <a href="/">榆樹不會開花</a>
+    </h1>
+    <p class="site-description"></p>
+  </div>
+  <nav class="site-navigation">
+    <ul>
       
-        <div class="icon"></div>
-        <time class="dt-published" datetime="2022-10-12T05:55:15.000Z"><a href="/2022/10/12/create_my_site_1/">2022-10-12</a></time>
-      
-      
+    </ul>
+  </nav>
+</header>
+
+    <main class="site-main posts-loop">
+    <article>
+
   
-    <h1 class="p-name title" itemprop="headline name">開始製作網站(一) - 下載Hexo + 部署至Github</h1>
+    
+    <h3 class="article-title"><span>開始製作網站(一) - 下載Hexo + 部署至Github</span></h3>
+    
   
 
-    </header>
-    <div class="e-content entry" itemprop="articleBody">
+  <div class="article-top-meta">
+    <span class="posted-on">
+      <a href="/2022/10/12/create_my_site_1/" rel="bookmark">
+        <time class="entry-date published" datetime="2022-10-12T05:55:15.000Z">
+          2022-10-12
+        </time>
+      </a>
+    </span>
+  </div>
+
+
+  
+
+  <div class="article-content">
+    <div class="entry">
       
         <h1 id="事前準備"><a href="#事前準備" class="headerlink" title="事前準備"></a>事前準備</h1><p>要安裝的套件主要有三個:</p>
 <ol>
@@ -103,7 +120,14 @@ Node.js 下載安裝進入下載頁面https://nodejs.org/zh-tw/download/，並�
 <p><img src="/../img/git_new_repository.png" alt="alt 新增repository"></p>
 <p>填寫 <strong>Respository name</strong>，並根據需求選擇選項(可以保持預設就好)，完成後點擊 <strong>Create repository</strong> 按鈕。</p>
 <p><img src="/../img/git_create_repository.png" alt="alt 創建repository"></p>
-<h1 id="開始-hexo"><a href="#開始-hexo" class="headerlink" title="開始 hexo"></a>開始 hexo</h1><h2 id="初始化"><a href="#初始化" class="headerlink" title="初始化"></a>初始化</h2><p>在你電腦裡想要放程式碼的地方創建一個資料夾，進入資料夾後按住 shift 點右鍵開啟 powershell。</p>
+<br />
+
+<hr>
+<br />
+
+<h1 id="開始-hexo"><a href="#開始-hexo" class="headerlink" title="開始 hexo"></a>開始 hexo</h1><br />
+
+<h2 id="初始化"><a href="#初始化" class="headerlink" title="初始化"></a>初始化</h2><p>在你電腦裡想要放程式碼的地方創建一個資料夾，進入資料夾後按住 shift 點右鍵開啟 powershell。</p>
 <p>輸入以下程式碼，創建一個默認的 hexo 結構。</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo init</span><br></pre></td></tr></table></figure>
 
@@ -119,7 +143,9 @@ Node.js 下載安裝進入下載頁面https://nodejs.org/zh-tw/download/，並�
 <p>找到檔案中的 <strong>url:</strong> 位置，改為</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">url: https://$&#123;username&#125;.github.io/$&#123;repository_name&#125;</span><br></pre></td></tr></table></figure>
 
-<h2 id="部署"><a href="#部署" class="headerlink" title="部署"></a>部署</h2><h3 id="新增文章"><a href="#新增文章" class="headerlink" title="新增文章"></a>新增文章</h3><p>輸入</p>
+<h2 id="部署"><a href="#部署" class="headerlink" title="部署"></a>部署</h2><br />
+
+<h3 id="新增文章"><a href="#新增文章" class="headerlink" title="新增文章"></a>新增文章</h3><p>輸入</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new $&#123;title&#125;</span><br></pre></td></tr></table></figure>
 <p>來在我們的網站上新增一篇文章，**${title}** 代表文章名稱</p>
 <h3 id="生成靜態網站"><a href="#生成靜態網站" class="headerlink" title="生成靜態網站"></a>生成靜態網站</h3><p>輸入</p>
@@ -147,112 +173,70 @@ Node.js 下載安裝進入下載頁面https://nodejs.org/zh-tw/download/，並�
 <h2 id="查看結果"><a href="#查看結果" class="headerlink" title="查看結果"></a>查看結果</h2><p>在瀏覽器網址中查找</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">https://$&#123;username&#125;.github.io/$&#123;repository_name&#125;</span><br></pre></td></tr></table></figure>
 <p>如果能成功看到網頁，代表成功了。</p>
+<br />
+
+<hr>
+<br />
+
 <h1 id="結語"><a href="#結語" class="headerlink" title="結語"></a>結語</h1><p>已經建立了一個最陽春的網站並能夠在瀏覽器中看到它後，接下來，會希望自己買的網域能成功地看到自己的網站，於是之後就來介紹一下如何將網域跟 github 連結。</p>
 
       
     </div>
-    <footer>
-      
-        
-  
-  <div class="categories">
-    <a href="/categories/%E9%96%8B%E5%A7%8B%E8%A3%BD%E4%BD%9C%E7%B6%B2%E7%AB%99/">開始製作網站</a>
+
   </div>
 
-        
-  
-  <div class="tags">
-    <a href="/tags/github/">github</a>, <a href="/tags/hexo/">hexo</a>, <a href="/tags/website/">website</a>
-  </div>
+  <div class="article-footer">
+    <div class="article-meta pull-left">
 
-        
+    
       
-      <div class="clearfix"></div>
-    </footer>
+
+    <span class="post-categories">
+      <i class="icon-categories"></i>
+        <a href="/categories/開始製作網站/">開始製作網站</a>
+    </span>
+    
+
+    
+    
+
+    <span class="post-tags">
+      <i class="icon-tags"></i>
+        <a href="/tags/github/">github</a><a href="/tags/hexo/">hexo</a><a href="/tags/website/">website</a>
+    </span>
+    
+
+    </div>
+
+    
   </div>
 </article>
 
-
-<section id="comment">
-  <h1 class="title">留言</h1>
-
   
-      <div id="fb-root"></div>
-<script>
-  (function(d, s, id) {
-    var js, fjs = d.getElementsByTagName(s)[0];
-    if (d.getElementById(id)) return;
-    js = d.createElement(s); js.id = id;
-    js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=123456789012345";
-    fjs.parentNode.insertBefore(js, fjs);
-  }(document, 'script', 'facebook-jssdk'));
-</script>
-
-<div class="fb-comments" data-href="http://yutree.me/2022/10/12/create_my_site_1/index.html" data-num-posts="5" data-width="840" data-colorscheme="light"></div>
-      
-  
-</section>
-
-</div></div>
-    <aside id="sidebar" class="alignright">
-  
-<div class="widget tag">
-  <h3 class="title">分類</h3>
-  <ul class="entry">
-  
-    <li><a href="/categories/%E9%96%8B%E5%A7%8B%E8%A3%BD%E4%BD%9C%E7%B6%B2%E7%AB%99/">開始製作網站</a><small>1</small></li>
-  
-  </ul>
-</div>
 
 
-  
-<div class="widget tag">
-  <h3 class="title">標籤</h3>
-  <ul class="entry">
-  
-    <li><a href="/tags/github/">github</a><small>1</small></li>
-  
-    <li><a href="/tags/hexo/">hexo</a><small>1</small></li>
-  
-    <li><a href="/tags/website/">website</a><small>1</small></li>
-  
-  </ul>
-</div>
 
-</aside>
-    <div class="clearfix"></div>
+
+
+
+
+
+
+    </main>
+
+    <footer class="site-footer">
+  <p class="site-info">
+    Proudly powered by <a href="https://hexo.io/" target="_blank">Hexo</a> and
+    Theme by <a href="https://github.com/CodeDaraW/Hacker" target="_blank">Hacker</a>
+    </br>
+    
+    &copy; 2022 YuChing Kao
+    
+  </p>
+</footer>
+    
+    
   </div>
-  <footer id="footer" class="inner"><div class="alignleft">
-  
-  &copy; 2022 YuChing Kao
-  
 </div>
-<div class="clearfix"></div></footer>
-  
-<script src="/js/jquery-3.4.1.min.js"></script>
-
-
-<script src="/js/jquery.imagesloaded.min.js"></script>
-
-
-<script src="/js/gallery.js"></script>
-
-
-
-
-
-
-<link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
-
-
-<script src="/fancybox/jquery.fancybox.pack.js"></script>
-
-<script>
-(function($){
-  $('.fancybox').fancybox();
-})(jQuery);
-</script>
-
 </body>
 </html>
