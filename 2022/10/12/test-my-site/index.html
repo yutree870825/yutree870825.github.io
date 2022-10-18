@@ -3,12 +3,23 @@
 <head>
   <meta charset="utf-8">
   
-  <title>test_my_site | 榆樹不會開花</title>
+  <title>開始製作網站(一) - 下載Hexo + 部署至Github | 榆樹不會開花</title>
   <meta name="author" content="YuChing Kao">
+  
+  <meta name="description" content="事前準備要安裝的套件主要有三個:
+
+Node.js
+Git
+Hexo
+
+接下來，詳細說一下安裝步驟。
+Node.js 下載安裝進入下載頁面https://nodejs.org/zh-tw/download/，並根據自己的裝置選擇下載。
+
+通常會選擇安裝LTS，因為比較穩定。或是選擇其他版本也可以，但">
   
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-  <meta property="og:title" content="test_my_site"/>
+  <meta property="og:title" content="開始製作網站(一) - 下載Hexo + 部署至Github"/>
   <meta property="og:site_name" content="榆樹不會開花"/>
 
   
@@ -54,13 +65,90 @@
       
       
   
-    <h1 class="p-name title" itemprop="headline name">test_my_site</h1>
+    <h1 class="p-name title" itemprop="headline name">開始製作網站(一) - 下載Hexo + 部署至Github</h1>
   
 
     </header>
     <div class="e-content entry" itemprop="articleBody">
       
-        
+        <h1 id="事前準備"><a href="#事前準備" class="headerlink" title="事前準備"></a>事前準備</h1><p>要安裝的套件主要有三個:</p>
+<ol>
+<li>Node.js</li>
+<li>Git</li>
+<li>Hexo</li>
+</ol>
+<p>接下來，詳細說一下安裝步驟。</p>
+<h2 id="Node-js-下載安裝"><a href="#Node-js-下載安裝" class="headerlink" title="Node.js 下載安裝"></a>Node.js 下載安裝</h2><p>進入下載頁面<a target="_blank" rel="noopener" href="https://nodejs.org/zh-tw/download/">https://nodejs.org/zh-tw/download/</a>，並根據自己的裝置選擇下載。</p>
+<p><img src="/../img/nodejs_download.png" alt="alt Nodejs下載頁面"></p>
+<p>通常會選擇安裝LTS，因為比較穩定。或是選擇其他版本也可以，但是 hexo 官方文件的需求是 nodejs 的版本不能低於 8.10，並建議安裝 10.0 以上的版本。</p>
+<p>然後就根據視窗的指示一路安裝就完成了。<br>(windows用戶要確認Add to Path是否已經勾選，默認為勾選，勾選後我們才能在 cmd 中使用指令)。</p>
+<p>若要測試是否安裝成功，可以打開cmd輸入</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">node -v</span><br></pre></td></tr></table></figure>
+<p>如果顯示的是你安裝的版本的話，就代表安裝成功啦！</p>
+<h2 id="Git-下載安裝"><a href="#Git-下載安裝" class="headerlink" title="Git 下載安裝"></a>Git 下載安裝</h2><p>一樣進入官方下載頁面<a target="_blank" rel="noopener" href="https://git-scm.com/downloads">https://git-scm.com/downloads</a>，選擇相應的裝置選項。</p>
+<p><img src="/../img/git_download.png" alt="alt Git下載頁面"></p>
+<p>以windows為例，點擊框起來的連結就可以下載。</p>
+<p><img src="/../img/git_download_2.png" alt="alt Git Windows 下載頁面"></p>
+<p>接下來就安照指示一步一步安裝。</p>
+<p>如果要測試是否安裝成功，可以打開cmd輸入</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git --version</span><br></pre></td></tr></table></figure>
+<p>如果出現版本號就代表成功安裝了！</p>
+<h2 id="Hexo-下載安裝"><a href="#Hexo-下載安裝" class="headerlink" title="Hexo 下載安裝"></a>Hexo 下載安裝</h2><p>安裝nodejs的用處就在這裡！下載 hexo 需要用到 npm 套件，確認 nodejs 下載成功後，在 cmd 中輸入指令。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-cli -g</span><br></pre></td></tr></table></figure>
+<p>安裝完後，一樣可以在cmd中輸入以下指令來確認是否安裝完成。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo -v</span><br></pre></td></tr></table></figure>
+<p>如果出現的是一連串的版本號就代表成功安裝。</p>
+<h2 id="Github-設定"><a href="#Github-設定" class="headerlink" title="Github 設定"></a>Github 設定</h2><p>進入 github 官網 <a target="_blank" rel="noopener" href="https://github.com/">https://github.com/</a>，並註冊一個帳號。</p>
+<p>註冊登入完後，點擊右上角的 + 號，並選擇 New repository。</p>
+<p><img src="/../img/git_new_repository.png" alt="alt 新增repository"></p>
+<p>填寫 <strong>Respository name</strong>，並根據需求選擇選項(可以保持預設就好)，完成後點擊 <strong>Create repository</strong> 按鈕。</p>
+<p><img src="/../img/git_create_repository.png" alt="alt 創建repository"></p>
+<h1 id="開始-hexo"><a href="#開始-hexo" class="headerlink" title="開始 hexo"></a>開始 hexo</h1><h2 id="初始化"><a href="#初始化" class="headerlink" title="初始化"></a>初始化</h2><p>在你電腦裡想要放程式碼的地方創建一個資料夾，進入資料夾後按住 shift 點右鍵開啟 powershell。</p>
+<p>輸入以下程式碼，創建一個默認的 hexo 結構。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo init</span><br></pre></td></tr></table></figure>
+
+<p>安裝 hexo 所需要的相關套件。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install</span><br></pre></td></tr></table></figure>
+<p>安裝完成後，會多一個 node_module 的資料夾，用來存放套件。</p>
+<p>接下來，要安裝能讓我們將 hexo 程式碼部署到 github 上面的套件。輸入：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
+
+<h2 id="進行設定"><a href="#進行設定" class="headerlink" title="進行設定"></a>進行設定</h2><p>打開 <strong>_config.yml</strong> 檔案，找到 <strong>deploy:</strong> 的位置，補上一些相關設定，使他們最後呈現</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">	type: git</span><br><span class="line">	repo: https://github.com/$&#123;username&#125;/$&#123;repository_name&#125;.git</span><br><span class="line">	branch: master</span><br></pre></td></tr></table></figure>
+<p>將 <strong>${username}</strong> 取代為你github的username，**${repository_name}** 取代為你當初取的 repository 名字。</p>
+<p>找到檔案中的 <strong>url:</strong> 位置，改為</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">url: https://$&#123;username&#125;.github.io/$&#123;repository_name&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="部署"><a href="#部署" class="headerlink" title="部署"></a>部署</h2><h3 id="新增文章"><a href="#新增文章" class="headerlink" title="新增文章"></a>新增文章</h3><p>輸入</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new $&#123;title&#125;</span><br></pre></td></tr></table></figure>
+<p>來在我們的網站上新增一篇文章，**${title}** 代表文章名稱</p>
+<h3 id="生成靜態網站"><a href="#生成靜態網站" class="headerlink" title="生成靜態網站"></a>生成靜態網站</h3><p>輸入</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo generate</span><br></pre></td></tr></table></figure>
+<p>或</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo g</span><br></pre></td></tr></table></figure>
+<p>來產生靜態網站，之後上傳到 github 的檔案會和我們現在在資料夾中看到的有些微的不同，上傳的為產生的靜態網站。</p>
+<h3 id="清除快取"><a href="#清除快取" class="headerlink" title="清除快取"></a>清除快取</h3><p>輸入</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo clean</span><br></pre></td></tr></table></figure>
+<p>或</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo cl</span><br></pre></td></tr></table></figure>
+<p>來清除靜態檔案與快取，在產生靜態網站前最好都先清除一遍。</p>
+<h3 id="運行網站"><a href="#運行網站" class="headerlink" title="運行網站"></a>運行網站</h3><p>輸入</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo server</span><br></pre></td></tr></table></figure>
+<p>或</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo s</span><br></pre></td></tr></table></figure>
+<p>可以讓網站在本地端跑起來，輸入指令後在瀏覽器網址欄輸入</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">localhost:4000</span><br></pre></td></tr></table></figure>
+<p>輸入後即可看到自己的 hexo 網站。</p>
+<h3 id="部署至-github"><a href="#部署至-github" class="headerlink" title="部署至 github"></a>部署至 github</h3><p>輸入</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo deploy</span><br></pre></td></tr></table></figure>
+<p>或</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo d</span><br></pre></td></tr></table></figure>
+<p>即可將靜態網站上傳至 github</p>
+<h2 id="查看結果"><a href="#查看結果" class="headerlink" title="查看結果"></a>查看結果</h2><p>在瀏覽器網址中查找</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">https://$&#123;username&#125;.github.io/$&#123;repository_name&#125;</span><br></pre></td></tr></table></figure>
+<p>如果能成功看到網頁，代表成功了。</p>
+<h1 id="結語"><a href="#結語" class="headerlink" title="結語"></a>結語</h1><p>已經建立了一個最陽春的網站並能夠在瀏覽器中看到它後，接下來，會希望自己買的網域能成功地看到自己的網站，於是之後就來介紹一下如何將網域跟 github 連結。</p>
+
       
     </div>
     <footer>
@@ -68,13 +156,13 @@
         
   
   <div class="categories">
-    <a href="/categories/test/">test</a>
+    <a href="/categories/%E9%96%8B%E5%A7%8B%E8%A3%BD%E4%BD%9C%E7%B6%B2%E7%AB%99/">開始製作網站</a>
   </div>
 
         
   
   <div class="tags">
-    <a href="/tags/test/">test</a>, <a href="/tags/other/">other</a>
+    <a href="/tags/github/">github</a>, <a href="/tags/hexo/">hexo</a>, <a href="/tags/website/">website</a>
   </div>
 
         
@@ -112,7 +200,7 @@
   <h3 class="title">分類</h3>
   <ul class="entry">
   
-    <li><a href="/categories/test/">test</a><small>1</small></li>
+    <li><a href="/categories/%E9%96%8B%E5%A7%8B%E8%A3%BD%E4%BD%9C%E7%B6%B2%E7%AB%99/">開始製作網站</a><small>1</small></li>
   
   </ul>
 </div>
@@ -123,9 +211,11 @@
   <h3 class="title">標籤</h3>
   <ul class="entry">
   
-    <li><a href="/tags/other/">other</a><small>1</small></li>
+    <li><a href="/tags/github/">github</a><small>1</small></li>
   
-    <li><a href="/tags/test/">test</a><small>1</small></li>
+    <li><a href="/tags/hexo/">hexo</a><small>1</small></li>
+  
+    <li><a href="/tags/website/">website</a><small>1</small></li>
   
   </ul>
 </div>
